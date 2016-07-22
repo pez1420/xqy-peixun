@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.operator;
+package cn.com.serveyou.xqy.peixun.chapter1.operator;
 
 import org.junit.Test;
 

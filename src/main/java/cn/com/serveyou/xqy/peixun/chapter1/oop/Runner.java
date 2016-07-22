@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.oop;
+package cn.com.serveyou.xqy.peixun.chapter1.oop;
 
 public interface Runner {
 	//字段在编译时会自动加上static final的修饰符

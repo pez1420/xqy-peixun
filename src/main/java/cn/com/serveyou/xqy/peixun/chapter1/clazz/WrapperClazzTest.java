@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.clazz;
+package cn.com.serveyou.xqy.peixun.chapter1.clazz;
 
 import org.junit.Test;
 

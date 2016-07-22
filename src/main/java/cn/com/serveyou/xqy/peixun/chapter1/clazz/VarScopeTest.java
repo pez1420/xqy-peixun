@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.clazz;
+package cn.com.serveyou.xqy.peixun.chapter1.clazz;
 
 public class VarScopeTest {
 	public static String name = "servyou"; // 类级变量

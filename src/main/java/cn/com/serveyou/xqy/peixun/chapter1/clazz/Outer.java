@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.clazz;
+package cn.com.serveyou.xqy.peixun.chapter1.clazz;
 
 import org.junit.Test;
 
@@ -16,14 +16,14 @@ class Circle {
 		return new DrawOne();
 	}
 	
-	//³ÉÔ±ÄÚ²¿Àà
+	//æˆå‘˜å†…éƒ¨ç±»
 	class Draw {
 		public void draw() {
-			System.out.println("darw " + radius);
+			System.out.println("darw " + Circle.this.radius);
 		}
 	}
 
-	//³ÉÔ±ÄÚ²¿Àà
+	//æˆå‘˜å†…éƒ¨ç±»
 	class DrawOne {
 		private int radius = 2;
 		public void draw() {
@@ -32,7 +32,7 @@ class Circle {
 		}
 	}
 	
-	//¾²Ì¬ÄÚ²¿Àà
+	//é™æ€å†…éƒ¨ç±»
 	static class DrawTwo {
 		public void draw() {
 			System.out.println("DrawTwo none");
@@ -49,7 +49,7 @@ public class Outer {
 	
 	@Test
 	public void test() {
-		//Ê¹ÓÃ³ÉÔ±ÄÚ²¿ÀàĞèÒª
+		//ä½¿ç”¨æˆå‘˜å†…éƒ¨ç±»éœ€è¦
 		new Circle(1).getDrawInstance().draw();
 		
 		new Circle(1).getDrawOneInstance().draw();
@@ -60,7 +60,7 @@ public class Outer {
 	@Test
 	public void testNoNameClass() {
 		//final int localVar = 100;
-		//ÄäÃûÀà
+		//åŒ¿åç±»
 		ISay say = new ISay() {
 			public void say() {
 				System.out.println("invoke say method()");

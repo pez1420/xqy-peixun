@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.string;
+package cn.com.serveyou.xqy.peixun.chapter1.string;
 
 import org.junit.Test;
 

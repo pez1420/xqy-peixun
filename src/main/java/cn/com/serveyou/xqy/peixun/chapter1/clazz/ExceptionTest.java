@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.clazz;
+package cn.com.serveyou.xqy.peixun.chapter1.clazz;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -32,6 +32,19 @@ public class ExceptionTest {
 	@Test
 	public void testOpenFile() {
 		System.out.println(openFile());
+	}
+	
+	
+	@Test
+	public void testArrayIndexOut() {
+		String[] names = {"miro-corp", "itax", "finance", "account"};
+		try{
+			for (int i = 0; i < 5; i++) {
+				System.out.println(names[i]);
+			}
+		}catch(java.lang.ArrayIndexOutOfBoundsException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

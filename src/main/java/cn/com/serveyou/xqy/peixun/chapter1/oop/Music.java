@@ -1,4 +1,4 @@
-package cn.com.serveyou.xqy.peixun.oop;
+package cn.com.serveyou.xqy.peixun.chapter1.oop;
 
 //ÀÖÆ÷
 abstract class Instrument {
