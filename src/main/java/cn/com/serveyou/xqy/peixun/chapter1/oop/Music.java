@@ -8,8 +8,10 @@ abstract class Instrument {
 	public abstract void adjust();
 }
 
+
 //¹ÜÀÖÆ÷
 class Wind extends Instrument {
+	
 	@Override
 	public void play() {
 		System.out.println("Wind.play()");
@@ -24,11 +26,13 @@ class Wind extends Instrument {
 
 //´ò»÷ÀÖ
 class Percussion extends Instrument {
+	
 	@Override
 	public void play() {
 		System.out.println("Percussion.play()");
 	}
 
+	@Override
 	public String what(){ return "Percussion"; }
 	
 	@Override
@@ -36,6 +40,7 @@ class Percussion extends Instrument {
 }
 
 class Brass extends Wind {
+	
 	@Override
 	public void play() {
 		System.out.println("Brass.play()");	
@@ -49,6 +54,9 @@ class Brass extends Wind {
 
 public class Music {
 	public static void main(String[] args) {
-
+		Instrument wind = new Wind();
+		wind.play();
+		wind.what();
 	}
 }
+

@@ -73,6 +73,14 @@ public class Outer {
 	
 	@Test
 	public void testInner() {
-		
+		class Inner {
+			public Inner() {
+				
+			}
+		}
+		System.out.println("Inner.class.getName()=="+Inner.class.getName());  
 	}
 }
+
+
+
