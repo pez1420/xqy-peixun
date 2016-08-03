@@ -19,6 +19,7 @@ public class VarScopeTest {
 		if (j == 3) {
 			int k = 5; // 块级变量
 		}
+		//System.out.println(k);
 		// 这里不能访问块级变量，块级变量只能在块内部访问
 		System.out.println("name=" + name + ", i=" + i + ", j=" + j);
 	}

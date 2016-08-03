@@ -14,7 +14,7 @@ import org.junit.Test;
 
 public class TestFile {
 
-	private static final String FILENAME = "E:\\study\\xqy-peixun\\src\\main\\resources\\xqy.txt";
+	private static final String FILENAME = "D:\\xqy.txt";
 
 	@Test
 	public void readFileByBytes() {
@@ -91,7 +91,7 @@ public class TestFile {
                 try {
                     reader.close();
                 } catch (IOException e1) {
-                	
+                	e1.printStackTrace();
                 }
             }
         }

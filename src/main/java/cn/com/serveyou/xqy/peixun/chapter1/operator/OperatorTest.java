@@ -32,8 +32,8 @@ public class OperatorTest {
 		//第一个表达式必须是boolean或Boolean类型，否则会产生编译错误
 		Float f1 = false? 1.0f: null;
         Float f2 = false? 1.0f: (false? 1.0f: null);  
-        System.out.println("f1=" + f1);
-        System.out.println("f2=" + f2);
+        //System.out.println("f1=" + f1);
+        //System.out.println("f2=" + f2);
 	}
 }
 

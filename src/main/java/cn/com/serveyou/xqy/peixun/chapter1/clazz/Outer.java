@@ -18,6 +18,8 @@ class Circle {
 	
 	//成员内部类
 	class Draw {
+		private int radius;
+		
 		public void draw() {
 			System.out.println("darw " + Circle.this.radius);
 		}

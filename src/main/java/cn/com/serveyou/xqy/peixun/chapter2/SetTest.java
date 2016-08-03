@@ -53,6 +53,14 @@ class Person {
 		return bAge && bName;
 	}
 
+
+	@Override
+	public String toString() {
+		return "Person [age=" + age + ", name=" + name + "]";
+	}
+	
+	
+
 }
 
 
@@ -66,6 +74,10 @@ public class SetTest {
 		System.out.println(persons.add(new Person(3, null)));
 		System.out.println(persons.add(new Person(2, "b")));
 		System.out.println(persons.add(new Person(2, "b")));
+	
+		for (Person p : persons) {
+			System.out.println(p.toString());
+		}
 	}
 	
 	@Test
